@@ -8,10 +8,12 @@ also known as Log4Shell. For example, it can be used to validate a detection or 
 Build the application:
 
     mvn clean package
+    
+Or, alternatively, download the [pre-built JAR](https://github.com/GroupePSA/log4shell-honeypot/releases/download/1.0.0-SNAPSHOT/log4shell-honeypot-capsule.jar).
 
-Run the application
+Run the application (in the `target` subdirectory if you built it locally):
 
-    java -Dlog4shell.all -jar target/log4shell-honeypot-capsule.jar
+    java -Dlog4shell.all -jar log4shell-honeypot-capsule.jar
 
 > The application is not vulnerable by default. You need to set the `log4shell.all` system property to enable 
 > vulnerabilities (or you can use vulnerability-specific options, see below).
