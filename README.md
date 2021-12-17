@@ -1,7 +1,7 @@
 # Log4Shell Honeypot
 
 This demo application is vulnerable to the [CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228),
-also known as Log4Shell.
+also known as Log4Shell. For example, it can be used to validate a detection or remediation script.
 
 ## How to launch
 
