@@ -1,0 +1,21 @@
+# Put main configuration in this file
+# See http://seedstack.org/docs/seed/configuration for more information
+
+logging:
+  level: INFO
+
+application:
+  # Unique identifier of the application accross your organization
+  id: log4shell-honeypot
+  # Make sure all your application base packages are listed below
+  basePackages: [ org.seedstack.samples.log4shell ]
+
+security<basicAuth>:
+  realms: ConfigurationRealm
+  users:
+    demo: demo
+  web:
+    urls:
+       -
+         pattern: /**
+         filters: authcBasic
